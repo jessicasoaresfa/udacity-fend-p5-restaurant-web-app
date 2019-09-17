@@ -392,13 +392,13 @@ nav h1 a {
 
 /* Adjust to iPod Pro */
 
-@media screen and (min-height: 1300px) {
+@media screen and (max-width: 1024px) and (max-height: 1300px) {
 
 		.inside #maincontent {
 			flex-direction: row-reverse;
 			justify-content: space-between;
 			height: -webkit-fill-available;
-			max-width: 1024px;
+			width: -webkit-fill-available;
 		}
 
 		.inside #map-container {
