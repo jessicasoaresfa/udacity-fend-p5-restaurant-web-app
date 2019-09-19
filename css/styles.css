@@ -52,6 +52,31 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
+
+/* ====================== Skip Link ======================= */
+
+.skip-link {
+			 position: absolute;
+			 top: -1000px;
+			 left: -1000px;
+			 height: 5px;
+			 width: 5px;
+			 text-align: left;
+			 overflow: hidden;
+			 background-color: #A40060;
+			 color: #fff;
+	 }
+
+	 a.skip-link:focus,
+	 a.skip-link:active,
+	 a.skip-link:hover {
+			 left: 0;
+			 top: 0;
+			 width: auto;
+			 height: auto;
+			 overflow: visible;
+	 }
+
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;

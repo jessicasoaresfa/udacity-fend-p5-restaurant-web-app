@@ -135,7 +135,7 @@ resetRestaurants = (restaurants) => {
 
   // Remove all map markers
   if (self.markers) {
-    self.markers.forEach(marker => marker.remove());
+    self.markers.forEach(marker => marker.remove()); // attention
   }
   self.markers = [];
   self.restaurants = restaurants;
@@ -166,7 +166,6 @@ createRestaurantHTML = (restaurant) => {
 
   const name = document.createElement('h1');
   name.innerHTML = restaurant.name;
-  name.setAttribute('aria-label', 'restaurant name');
   li.append(name);
 
   const neighborhood = document.createElement('p');
@@ -175,14 +174,13 @@ createRestaurantHTML = (restaurant) => {
 
   const address = document.createElement('p');
   address.innerHTML = restaurant.address;
-  address.setAttribute('aria-label', 'restaurant address');
   li.append(address);
 
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
   more.setAttribute('aria-label', 'View details for '+ restaurant.name +' located at '+ restaurant.neighborhood +' '+ restaurant.address);
-  more.tabIndex = "3";
+  more.tabIndex = "3"; // attention
   li.append(more)
 
   return li
@@ -213,3 +211,18 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
+
+
+/**
+* Add Skip Link Focus
+*/
+
+$( document ).ready(function() {
+        $(".skip-link").click(function(event){
+            var skipLinkTo="#"+this.href.split('#')[1];
+            $(skipLinkTo).attr('tabindex', -1).on('blur focusout', function () {
+                $(this).removeAttr('tabindex');
+
+            }).focus();
+        });
+    });

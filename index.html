@@ -19,21 +19,26 @@
 <body>
   <header>
     <nav>
-      <h1><a tabindex="0" aria-label="Link to homepage" href="/">Restaurant Reviews</a></h1>
+      <h1><a aria-label="Link to homepage" href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
 
-  <main id="maincontent">
-    <section tagindex = "-1"  id="map-container">
-      <div id="map"></div>
+  <a href="#restaurants" class="skip-link">Skip to restaurant filters</a>
+
+  <main id="maincontent" role="main">
+    <section id="map-container">
+      <div id="map" role="application" aria-hidden="true" aria-describedby="map-description"></div>
+      <div hidden id="map-description">A map of all filtered restaurants</div>
     </section>
-    <section>
+
+
+    <section id ="#restaurants">
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select tabindex="2" aria-label="filter neighborhoods" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select aria-label="Select neighborhoods" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select tabindex="2" aria-label="filter cuisines" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select aria-label="Select cuisines" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
@@ -49,7 +54,7 @@
 
 
   <footer id="footer">
-    Copyright (c) 2017 <a tabindex="4" aria-label="Link to homepage" href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    Copyright (c) 2017 <a aria-label="Link to homepage" href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
   </footer>
 
 </body>
