@@ -116,6 +116,7 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 
     const day = document.createElement('td');
     day.innerHTML = key;
+    day.setAttribute('tabindex', 0);
     row.appendChild(day);
 
     const time = document.createElement('td');
@@ -209,17 +210,3 @@ getParameterByName = (name, url) => {
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-
-/**
-* Add Skip Link Focus
-*/
-
-$( document ).ready(function() {
-        $(".skip-link").click(function(event){
-            var skipTo="#"+this.href.split('#')[1];
-            $(skipTo).attr('tabindex', -1).on('blur focusout', function () {
-                $(this).removeAttr('tabindex');
-
-            }).focus();
-        });
-    });

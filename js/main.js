@@ -180,7 +180,7 @@ createRestaurantHTML = (restaurant) => {
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
   more.setAttribute('aria-label', 'View details for '+ restaurant.name +' located at '+ restaurant.neighborhood +' '+ restaurant.address);
-  more.tabIndex = "3"; // attention
+  more.tabIndex = "0"; // attention
   li.append(more)
 
   return li
@@ -211,18 +211,3 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
-
-
-/**
-* Add Skip Link Focus
-*/
-
-$( document ).ready(function() {
-        $(".skip-link").click(function(event){
-            var skipLinkTo="#"+this.href.split('#')[1];
-            $(skipLinkTo).attr('tabindex', -1).on('blur focusout', function () {
-                $(this).removeAttr('tabindex');
-
-            }).focus();
-        });
-    });
