@@ -23,7 +23,7 @@
     </nav>
   </header>
 
-  <a href="#restaurants" class="skip-link">Skip to restaurant filters</a>
+  <a href="#restaurants" class="skip-link" onclick="document.getElementById("restaurants").focus(); return false;">Skip to restaurant filters</a>
 
   <main id="maincontent" role="main">
     <section id="map-container">
@@ -32,7 +32,7 @@
     </section>
 
 
-    <section id ="#restaurants">
+    <section id ="restaurants" tabindex="-1">
       <div class="filter-options">
         <h2>Filter Results</h2>
         <select aria-label="Select neighborhoods" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
@@ -42,7 +42,7 @@
           <option value="all">All Cuisines</option>
         </select>
       </div>
-      <ul id="restaurants-list"></ul>
+      <ul id="restaurants-list" tabindex="0"></ul>
     </section>
   </main>
 
