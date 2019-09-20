@@ -59,6 +59,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 			 left: -1000px;
 			 height: 5px;
 			 width: 5px;
+			 padding: 20px;
 			 text-align: left;
 			 overflow: hidden;
 			 background-color: #000;
