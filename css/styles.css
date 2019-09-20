@@ -83,7 +83,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 
 /* ====================== Navigation ====================== */
 nav {
-  width: 100%;
+  width: auto;
   height: 5rem;
   background-color: #252831;
   display: flex;
