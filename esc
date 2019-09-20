@@ -1,0 +1,102 @@
+[33mcommit 32c8129c163511d8156f520d092b558700b93824[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Fri Sep 20 08:04:11 2019 -0300
+
+    Setting up Service Worker
+
+[33mcommit f7d06d753f89a3d6831c1bc234b582d685406084[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Fri Sep 20 07:56:43 2019 -0300
+
+    Adapted contrast in footer for better accessibility
+
+[33mcommit 853f29391a95725712cdbcb74cd182dda1781e29[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Fri Sep 20 07:54:02 2019 -0300
+
+    Added style for Skip Link
+
+[33mcommit cbe4714bc0643d17acd4ad1b448cc67b3c859a49[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Fri Sep 20 01:34:36 2019 -0300
+
+    Setting up Service Worker
+
+[33mcommit 3dc69f4cf40c69435c25c5db737efb1f42b09f4c[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Fri Sep 20 01:30:53 2019 -0300
+
+    Setting up Service Worker
+
+[33mcommit d873bae34cbf50bb20ed863dc05093a48b063ed7[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Fri Sep 20 01:21:24 2019 -0300
+
+    Setting up Service Worker
+
+[33mcommit 138ad39ac15ca95e7da4d2e8a66a9366223bde75[m
+Merge: 3e935f6 e8962e9
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Thu Sep 19 22:56:25 2019 -0300
+
+    Merge branch 'master' of https://github.com/jessicasoaresfa/udacity-fend-p5-restaurant-web-app
+
+[33mcommit 3e935f65b4dd10273217a7c30914cd25c49141b7[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Thu Sep 19 22:56:25 2019 -0300
+
+    Implement accessibility features in the site HTML v.3
+
+[33mcommit e8962e919697f0a0b8c2012eb55f47c67ad423be[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Thu Sep 19 22:56:25 2019 -0300
+
+    Accessibility v.3
+
+[33mcommit 7a56043db6c115e7b4453e8b96adb289281763b7[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Thu Sep 19 12:48:39 2019 -0300
+
+    Accessibility v.2
+
+[33mcommit ff2ab10f5ad78316fadce96962d31be9aece0707[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Tue Sep 17 12:48:28 2019 -0300
+
+    Accessibility v.1
+
+[33mcommit 862cc4d13eb4a9164e969b142249434519eb204f[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Sat Sep 14 19:20:18 2019 -0300
+
+    Convert the provided site to use responsive design v.3
+
+[33mcommit ccd219a04970d5d0fc476553bdbcc67facd47249[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Sat Sep 14 19:20:18 2019 -0300
+
+    Convert the provided site to use a responsive design v.2
+
+[33mcommit 059be178f24f2c1d8b2c729911201529aea037ea[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Fri Sep 13 23:41:25 2019 -0300
+
+    Convert the provided site to use a responsive design v.1
+
+[33mcommit e9431d08dc3556b23d1f75ecef07663453a8dc9e[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Fri Sep 13 20:48:18 2019 -0300
+
+    Adding Meta Tags
+
+[33mcommit 12b404c524da8be70df325a5b5ae16b99ac7efe1[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Fri Sep 13 20:32:57 2019 -0300
+
+    Mapbox API
+
+[33mcommit c4bd9dce77ba24cd74a4175422224e6d6b48a22f[m
+Author: Jessica Soares <jessicasoaresfa@gmail.com>
+Date:   Fri Sep 13 19:38:56 2019 -0300
+
+    initial commit

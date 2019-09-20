@@ -12,6 +12,8 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+////////////////////////////q
+
 let restaurants,
   neighborhoods,
   cuisines
