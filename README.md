@@ -1,6 +1,6 @@
 # Project Overview
 
-For the  **Restaurant Reviews**  projects, part of **Udacity**'s **Front-End Web Developer Nanodegree** program, the mission was to incrementally convert a static webpage to a mobile-ready web application. 
+For the  **Restaurant Reviews**  project, part of **Udacity**'s **Front-End Web Developer Nanodegree** program, the mission was to incrementally convert a static webpage to a mobile-ready web application. 
 
 
 ## Steps to complete the project
