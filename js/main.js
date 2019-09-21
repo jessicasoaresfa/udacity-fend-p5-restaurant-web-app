@@ -1,19 +1,3 @@
-/* Setting up Service Worker */
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
-
-////////////////////////////q
-
 let restaurants,
   neighborhoods,
   cuisines
@@ -180,7 +164,7 @@ createRestaurantHTML = (restaurant) => {
   image.alt = 'An image from '+ restaurant.name +', a restaurant with '+restaurant.cuisine_type +' cuisine ';
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 

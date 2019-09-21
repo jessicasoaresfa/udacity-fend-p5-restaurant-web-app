@@ -1,18 +1,25 @@
-
-console.log('Service Worker: Registered')
-
-const RWA_CACHE = 'udacity-rest-app-v1'
-
-const filesToCache = [
+const pageCache = 'udacity-rest-app-v1';
+const assets = [
     '/',
     '/index.html',
     '/restaurant.html',
+    '/restaurant.html?id=1',
+    '/restaurant.html?id=2',
+    '/restaurant.html?id=3',
+    '/restaurant.html?id=4',
+    '/restaurant.html?id=5',
+    '/restaurant.html?id=6',
+    '/restaurant.html?id=7',
+    '/restaurant.html?id=8',
+    '/restaurant.html?id=9',
+    '/restaurant.html?id=10',
+    '/sw.js',
+    '/favicon.ico',
     '/css/styles.css',
+    '/js/app.js',
     '/js/dbhelper.js',
     '/js/main.js',
     '/js/restaurant_info.js',
-    './js/dbhelper.js',
-    './js/restaurant_info.js',
     '/data/restaurants.json',
     '/img/1.jpg',
     '/img/2.jpg',
@@ -23,30 +30,31 @@ const filesToCache = [
     '/img/7.jpg',
     '/img/8.jpg',
     '/img/9.jpg',
-    '/img/10.jpg'
+    '/img/10.jpg',
 ];
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(RWA_CACHE)
-      .then(function(cache) {
-        console.log('Opened cache');
-        return cache.addAll(filesToCache);
-      })
+    caches.open(pageCache).then(cache => {
+      console.log('service worker has been installed');
+      cache.addAll(assets);
+  })
   );
 });
 
+self.addEventListener('activate', event => {
+    console.log('service worker has been activated');
+});
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        if (response) {
-          console.log('Found the', event.request, 'in cache');
-          return response || fetch(event.request);
-        }
-        return fetch(event.request);
-      }
-    )
+    caches.open(pageCache).then(cache => {
+      return cache.match(event.request).then(response => {
+        return response || fetch(event.request).then(response => {
+          cache.put(event.request, response.clone());
+          return response;
+        });
+      });
+    })
   );
 });

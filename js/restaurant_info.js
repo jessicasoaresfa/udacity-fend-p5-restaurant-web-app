@@ -105,7 +105,6 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   // fill reviews
   fillReviewsHTML();
 }
-
 /**
  * Create restaurant operating hours HTML table and add it to the webpage.
  */
@@ -133,7 +132,7 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
  */
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
-  const title = document.createElement('h2');
+  const title = document.createElement('h3');
   title.innerHTML = 'Reviews';
   title.setAttribute('tabindex', 0);
   container.appendChild(title);
